@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>MVC Project</title>
+</head>
+
+<body>
+    <script src="app.js"></script>
+    <h2>CRUD App</h2>
+    <!--Contact List module-->
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();">
+                    <div>
+                        <label for="Fname">Full Name</label>
+                        <input type="text" name="Fname" placeholder="Haraamkhor" id="fname">
+                    </div>
+                    <div>
+                        <label for="EmpCode">Employee Code</label>
+                        <input type="text" name="EmpCode" placeholder="Eg. 23012" id="empcode">
+                    </div>
+                    <div>
+                        <label for="salary">Salary</label>
+                        <input type="text" name="salary" placeholder="35000" id="salary">
+                    </div>
+                    <div>
+                        <label for="City">Location(City)</label>
+                        <input type="text" name="City" placeholder="Eg. Mumbai" id="city">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Emp Code</th>
+                            <th>Salary</th>
+                            <th>Location(City)</th>
+                            <th>Edit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+
+
+</body>
+
+</html>
